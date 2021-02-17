@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: cornsilk;
+}
+.winner{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.game-container{
+    display: grid;
+    margin: 40px auto;
+    padding: 30px 0;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    background-color: cadetblue;
+    gap: 8px;
+    width: fit-content;
+    font-size: 50px;
+}
+.restart{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: cornsilk;
+    color: cadetblue;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.restart:active{
+    color:rgb(59, 222, 228);
+}
+.cell{
+    background-color: cornsilk;
+    display: flex;
+    justify-content: center;
+}
+.marked{
+    background-color: rgba(255, 248, 220, 0.664);
+}
